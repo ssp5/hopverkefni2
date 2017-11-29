@@ -2,12 +2,12 @@
 
   width: 100%;
   padding: 0;
-  border: none;
 
-  font-family: Merriweather, georgia, serif;
+  font-family: "Open Sans", georgia, serif;
   font-size: 2rem;
 
   &__one {
+    margin-bottom: 20px;
     font-size: 3rem;
   }
 
@@ -16,6 +16,7 @@
   }
 
   &__three {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 }

@@ -5,7 +5,6 @@ $gutter: 20px;
 /* setjum box-sizing: border-box; á allt */
 html { /* stylelint-disable-line */
   box-sizing: border-box;
-  background-color: red;
 }
 
 *, *:before, *:after { /* stylelint-disable-line */
@@ -23,10 +22,9 @@ html { /* stylelint-disable-line */
   margin-right: $gutter;
   margin-left: $gutter;
 
-  font-family: Lato, helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: red;
 
   @media (min-width: $max-width) {
     margin: 0;
@@ -52,4 +50,5 @@ main { /* stylelint-disable-line */
 @import "scss/list";
 @import "scss/card";
 @import "scss/cardlist";
-@import "scss/videoplayer";
+@import "scss/videostyle";
+@import "scss/all";

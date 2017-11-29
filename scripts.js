@@ -59,7 +59,7 @@ var startup = function videoInterface() {
     videoLink.href = 'video.html?id=' + videoId;
     var videoPoster = createElement('img', 'videoPoster', null, videoLink);
     videoPoster.src = video.poster;
-    var thumbnail = createElement('div', 'thumbnail', minutes(video.duration), videoPoster);
+    var thumbnail = createElement('div', 'thumbnail', minutes(video.duration), videoLink);
     var cardContent = createElement('div', 'card_content', null, card)
     var videoTitle = createElement('h3', 'heading heading__three', video.title, cardContent);
     var videoDate = createElement('h3', 'text', findDate(video.created), cardContent);
