@@ -1,0 +1,24 @@
+.body {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.videoList {
+  max-width: 1200px;
+}
+
+.thumbnail {
+  position: absolute;
+  right: 0.5em;
+  bottom: 1em;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  font-size: 1em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardlist__col {
+  border-bottom: 2px solid #eee;
+}

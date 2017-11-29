@@ -1,0 +1,65 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -($gutter / 2);
+  margin-bottom: $gutter;
+  margin-left: -($gutter / 2);
+  margin-top: 150px;
+
+  .img__stor {
+    height: 80%;
+  }
+}
+
+// mixin sem reiknar nákvæmar prósentur útfrá dálkum
+@mixin columns($col: 1) {
+  // margföldum með "1%" til að breyta gildi í prósentu gildi
+  width: ($col / 12 * 100) * 1%;
+}
+
+.col {
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
+
+  &-12 {
+    @include columns(12);
+  }
+  &-8 {
+    @include columns(8);
+  }
+  &-7 {
+    @include columns(7);
+  }
+  &-6 {
+    @include columns(6); //í stærsta, þe. ofar en 1200px, tekur þetta hálfa síðuna
+  }
+  &-5 {
+    @include columns(5);
+  }
+  &-4 {
+    @include columns(4);
+  }
+
+  // todo útfæra rest af grid
+
+
+  &-sm {
+    @media (max-width: 5000px) { //minna en 1200 px þá ....
+      &-12 {
+        @include columns(12); //í minna en 1200px tekur þetta alla síðuna (12 columns)
+      }
+      &-8 {
+        @include columns(8);
+      }
+      &-6 {
+        @include columns(6);
+      }
+      &-4 {
+        @include columns(4);
+      }
+
+
+    }
+  }
+
+}
